@@ -1,0 +1,8 @@
+<table>
+  <tr *ngFor="let p of data">
+    <td>{{p.param}}</td>
+    <td *ngIf="p.value == 'yes'">V</td>
+    <td *ngIf="p.value == 'no'">X</td>
+    <td *ngIf="p.value == 'partial'">P</td>
+  </tr>
+</table>

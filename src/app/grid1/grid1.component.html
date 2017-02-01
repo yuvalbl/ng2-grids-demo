@@ -1,8 +1,60 @@
-<h2>
-  Prime NG
-</h2>
+<section>
+  <h2>
+    Prime NG
+  </h2>
+  <p>
+    <b>Pros:</b>
+    Good documentation. Easy to use. Pipes supported.
+    Using custom HTML is supported on both headers by using the <i>template</i> tag.
+    Support many features (resizing, scroll with static headers, pagination,
+    different filtering, multi-sorting etc.)
+  </p>
+  <p>
+    <b>Cons:</b>
+    Still in RC, sorting bugs when <i>p-headerColumnGroup</i> used.
+    Custom HTML template capabilities is limited to PrimeNG attributes.
+    Using in-table classes requires turning css encapsulation off.
+  </p>
+  <app-summary [data]="primeNGSummary"></app-summary>
+</section>
+<section>
+  <h3>
+    <span class="custom">Testing pipes</span>
+  </h3>
+  <div *ngFor="let nameMode of nameModes">
+    <input type="radio" name="nickname" (click)="currentNameMode = nameMode.value"
+           [value]="nameMode.value" [checked]="nameMode.value == currentNameMode">
+    {{nameMode.display}}
+  </div>
+</section>
 
-<!--<p-dataTable [value]="characters">-->
-  <!--<p-column field="id" header="Moish"></p-column>-->
-  <!--<p-column field="year" header="Year"></p-column>-->
-<!--</p-dataTable>-->
+<section>
+  <p-dataTable [value]="characters" [tableStyleClass]="'table-style'" [scrollable]="true" scrollHeight="200px">
+    <p-headerColumnGroup>
+      <p-row>
+        <p-column header="Id" rowspan="2" [sortable]="true"></p-column>
+        <p-column header="Name" rowspan="2" [sortable]="true" [styleClass]="'custom'">
+          <template pTemplate="header">
+            <span>Name / Nickname</span>
+          </template>
+        </p-column>
+        <p-column header="Weaponry" colspan="2" [sortable]="true"></p-column>
+        <p-column header="Type" rowspan="2" [sortable]="true"></p-column>
+      </p-row>
+      <p-row>
+        <p-column header="Weapon"></p-column>
+        <p-column header="How Many"></p-column>
+      </p-row>
+    </p-headerColumnGroup>
+
+    <p-column field="id" header="Id" [sortable]="true"></p-column>
+    <p-column field="name" header="Name">
+      <template pTemplate="body" let-char="rowData">
+        {{char.name | nickname:currentNameMode}}
+      </template>
+    </p-column>
+    <p-column field="weapon" header="Weapon"></p-column>
+    <p-column field="weapon_quantity" header="How Many"></p-column>
+    <p-column field="type" header="Type"></p-column>
+  </p-dataTable>
+</section>

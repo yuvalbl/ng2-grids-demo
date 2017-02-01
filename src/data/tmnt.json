@@ -1,13 +1,14 @@
 [
-  {"id": "11", "name": "Leonardo", "type":"Protagonist", "description": ""},
-  {"id": "12", "name": "Donatello", "type":"Protagonist", "description": ""},
-  {"id": "13", "name": "Raphael", "type":"Protagonist", "description": ""},
-  {"id": "14", "name": "Michelangelo", "type":"Protagonist", "description": ""},
-  {"id": "15", "name": "Splinter", "type":"Supporting character", "description": ""},
-  {"id": "16", "name": "April O'Neil", "type":"Supporting character", "description": ""},
-  {"id": "17", "name": "Casey Jones", "type":"Supporting character", "description": "Supporting characters"},
-  {"id": "18", "name": "Shredder", "type":"Antagonist", "description": ""},
-  {"id": "19", "name": "Bebop", "type":"Antagonist", "description": ""},
-  {"id": "20", "name": "Rocksteady", "type":"Antagonist", "description": ""},
-  {"id": "20", "name": "Krang", "type":"Antagonist", "description": ""}
+  {"id": "12", "name": "Donatello",     "weapon":"bo", "weapon_quantity":"1", "type":"Protagonist", "description": "The brain"},
+  {"id": "13", "name": "Raphael",       "weapon":"sai", "weapon_quantity":"2", "type":"Protagonist", "description": "The awesome"},
+  {"id": "14", "name": "Michelangelo",  "weapon":"nunchuck", "weapon_quantity":"2", "type":"Protagonist", "description": "The dancer"},
+  {"id": "15", "name": "Splinter",      "type":"Supporting character", "description": ""},
+  {"id": "16", "name": "April O'Neil",  "type":"Supporting character", "description": ""},
+  {"id": "17", "name": "Casey Jones",   "type":"Supporting character", "description": "Supporting characters"},
+  {"id": "18", "name": "Shredder",      "type":"Antagonist", "description": ""},
+  {"id": "19", "name": "Bebop",         "type":"Antagonist", "description": ""},
+  {"id": "20", "name": "Rocksteady",    "type":"Antagonist", "description": ""},
+  {"id": "21", "name": "Krang",         "type":"Antagonist", "description": ""},
+  {"id": "11", "name": "Leonardo",      "weapon":"katana", "weapon_quantity":"2", "type":"Protagonist", "description": "The leader"}
+
 ]
