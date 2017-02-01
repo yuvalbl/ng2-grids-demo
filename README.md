@@ -1,4 +1,5 @@
 # Ng2GridsDemo
+Demo comparing different angular 2 grid components (using angular-cli as project generator)
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 To use it:
