@@ -3,11 +3,12 @@ Demo comparing different angular 2 grid components (using angular-cli as project
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 To use it:
-1. Install angular-cli globally: `npm i -g angular-cli`
-2. Clone this repository: `git clone https://github.com/yuvalbl/ng2-grids-demo`
-3. Install local packages: `npm i`
-4. Run angular-cli server: `ng serve`
-5. Navigate to `http://localhost:4200/`
+
+1. Install angular-cli globally: `npm i -g angular-cli`</br>
+2. Clone this repository: `git clone https://github.com/yuvalbl/ng2-grids-demo`</br>
+3. Install local packages: `npm i`</br>
+4. Run angular-cli server: `ng serve`</br>
+5. Navigate to `http://localhost:4200/`</br>
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
