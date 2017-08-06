@@ -9,6 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
+        "data",
         "favicon.ico"
       ],
       "index": "index.html",
@@ -23,11 +24,12 @@
         "../node_modules/primeui/primeui-ng-all.css"
       ],
       "scripts": [],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
+
     }
   ],
   "e2e": {
